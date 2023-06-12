@@ -1,7 +1,7 @@
 {
 	"name": "Where Is It",
 	"version": "1.0.0",
-	"description": "Entertainment provider locator",
+	"description": "Show provider locator",
 	"manifest_version": 3,
 	"author": "Miguel Ryan Bancolita",
 	"action": {

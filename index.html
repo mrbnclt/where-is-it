@@ -11,12 +11,12 @@
 		<title>Where Is It</title>
 	</head>
 	<body>
-		<div class="container p-3">
+		<div class="container py-3" style="width: 40rem">
 			<div>
 				<h4>Where is it?</h4>
 				<p>Find where movies and tv shows are streamed on your country</p>
 				<p id="region">Region:</p>
-				<div class="input-group input-group-sm mb-3" style="width: 30rem">
+				<div class="input-group input-group-sm mb-3">
 					<input
 						class="input-group-text w-75"
 						placeholder="Search for movies or tv shows"
@@ -26,7 +26,10 @@
 					</button>
 				</div>
 			</div>
-			<div id="show-list"></div>
+			<div class="d-flex justify-content-center align-items-center">
+				<div class="spinner-border" role="status" hidden id="spinner"></div>
+			</div>
+			<ul class="list-group" id="show-list"></ul>
 		</div>
 	</body>
 	<script src="script.js"></script>

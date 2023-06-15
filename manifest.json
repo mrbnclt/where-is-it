@@ -4,6 +4,9 @@
 	"description": "Show provider locator",
 	"manifest_version": 3,
 	"author": "Miguel Ryan Bancolita",
+	"icons": {
+		"128": "logo.png"
+	},
 	"action": {
 		"default_popup": "index.html",
 		"default_title": "Search for movies or series"

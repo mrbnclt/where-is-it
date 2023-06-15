@@ -11,11 +11,13 @@
 		<title>Where Is It</title>
 	</head>
 	<body>
-		<div class="container py-3" style="width: 40rem">
+		<div class="container-fluid py-2" style="width: 40rem">
 			<div>
-				<h4>Where is it?</h4>
-				<p>Find where movies and tv shows are streamed on your country</p>
-				<p id="region">Region:</p>
+				<h5>Where is it?</h5>
+				<p class="m-0" style="font-size: 14px">
+					Find where movies and tv shows are streamed on your country
+				</p>
+				<p id="region" style="font-size: 14px">Region:</p>
 				<div class="input-group input-group-sm mb-3">
 					<input
 						class="input-group-text w-75"
@@ -29,7 +31,21 @@
 			<div class="d-flex justify-content-center align-items-center">
 				<div class="spinner-border" role="status" hidden id="spinner"></div>
 			</div>
-			<ul class="list-group" id="show-list"></ul>
+			<ul
+				class="list-group overflow-y-scroll"
+				id="show-list"
+				style="max-height: 400px"></ul>
+			<div class="d-flex justify-content-between mt-3">
+				<i style="font-size: 11px"
+					>Where is it? uses the TMDb API but is not endorsed or certified by
+					TMDb.</i
+				>
+				<img
+					id="tmdb-attribution"
+					width="50"
+					size="50"
+					sr="./images/tmdb.svg" />
+			</div>
 		</div>
 	</body>
 	<script src="script.js"></script>

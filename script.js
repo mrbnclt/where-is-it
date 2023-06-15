@@ -1,6 +1,8 @@
 var searchButton = document.getElementById("search");
 var spinner = document.getElementById("spinner");
 var showList = document.getElementById("show-list");
+var tmdbAttribution = document.getElementById("tmdb-attribution");
+tmdbAttribution.src = chrome.runtime.getURL("images/tmdb.svg");
 
 searchButton.addEventListener("click", searchClicked);
 let userRegion;

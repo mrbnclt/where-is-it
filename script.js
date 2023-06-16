@@ -14,7 +14,7 @@ fetch("https://ipinfo.io/json").then(async (response) => {
 	image.setAttribute("height", "24");
 	image.setAttribute("width", "24");
 	image.setAttribute("alt", "Flag");
-	image.src = `https://flagsapi.com/${currentRegion.country}/shiny/64.png`;
+	image.src = `https://flagsapi.com/${currentRegion.country}/shiny/24.png`;
 	document.getElementById("region").appendChild(image);
 	regionText.innerHTML = regionText.innerHTML + ` ${currentRegion.country}`;
 	userRegion = currentRegion.country;

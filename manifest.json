@@ -1,7 +1,7 @@
 {
-	"name": "Where Is It",
-	"version": "1.0.0",
-	"description": "Show provider locator",
+	"name": "Where To Watch",
+	"version": "1.0.1",
+	"description": "Show streaming provider locator",
 	"manifest_version": 3,
 	"author": "Miguel Ryan Bancolita",
 	"icons": {

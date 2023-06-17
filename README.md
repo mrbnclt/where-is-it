@@ -5,7 +5,7 @@ Have you ever wanted to watch a movie and search through Netflix only to find ou
 # Features:
 - Search for movies / tv shows.
 - Shows what streaming providers where a movie / tv show is available in your region.
-- [_IN PROGRESS_] Ability to change region (useful if you have a VPN)
+- [_IN PROGRESS_] Ability to change region
 ![image](https://github.com/mrbnclt/where-to-watch/assets/45745778/b391df1e-be29-463e-abc6-30211d9e36d2)
 
 

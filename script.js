@@ -3,6 +3,7 @@ var spinner = document.getElementById("spinner");
 var showList = document.getElementById("show-list");
 var tmdbAttribution = document.getElementById("tmdb-attribution");
 var queryText = document.getElementById("query");
+var notFound = document.getElementById("not-found");
 queryText.focus();
 
 queryText.addEventListener("keyup", checkIfEnter);
@@ -56,7 +57,6 @@ function getProviders(id, media_type) {
 }
 
 function createList(shows) {
-	showList.innerHTML = "";
 	for (const show of shows) {
 		if (show.media_type === "tv" || show.media_type === "movie") {
 			// Show Wrapper
@@ -131,7 +131,13 @@ function search() {
 		{ headers: {} }
 	).then(async (response) => {
 		const shows = await response.json();
-		createList(shows.results);
+		showList.innerHTML = "";
+		if(shows.results.length > 0) {
+			notFound.setAttribute("hidden", true);
+			createList(shows.results);
+		} else {
+			notFound.removeAttribute("hidden");
+		}
 		spinner.setAttribute("hidden", "hidden");
 	});
 }
